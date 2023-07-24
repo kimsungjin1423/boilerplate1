@@ -717,7 +717,7 @@ $RECYCLE.BIN/
 
 # Eclipse Gradle plugin generated files
 # Eclipse Core
-# JDT-specific (Eclipse Java Development Tools)
+# JDT-specific (Eclipse Java Development Tools) 
 
 ### Gradle Patch ###
 # Java heap dump
