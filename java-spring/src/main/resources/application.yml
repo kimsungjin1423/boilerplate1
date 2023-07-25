@@ -2,17 +2,17 @@ server.port: 8091 # tomcat서버 포트 8091으로 설정
 
 spring:
   security:
-    #    oauth2:
-    #      client:
-    #        registration:
-    #          google:
-    ##            client-id: 64680890268-vavsobuabuf5adj9d1rr06jnt6vl3u8t.apps.googleusercontent.com
-    ##            client-secret: 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
-    #            client-id: 6468089
-    #            client-secret: GOC
-    #            scope:
-    #              - email
-    #              - profile
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 6238467831788-18sm024scoehcgg3bud0tu3dasuklisq.apps.googleusercontent.com
+            client-secret: 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
+            #            client-id: 6468089
+            #            client-secret: GOC
+            scope:
+              - email
+              - profile
     user:     # spring security 기본 아이디와 암호
       name: user
       password: 1234
@@ -46,9 +46,12 @@ spring:
       enabled: true
 
 mybatis:
-  mapper-locations: mybatis-mapper/**/*.xml # mapper.xml
+  mapper-locations: mybatis-mapper/**/*-sql.xml # mapper.xml
   configuration:
     map-underscore-to-camel-case: true # camel case
   # xml에 있는 모델 앞의 패키지명을 생략 가능하도록 지원해주는 기능
   #  type-aliases-package: com.thejoeun.practice1.boilerplate1.model.mapper
   type-aliases-package: com.thejoeun.practice1.boilerplate1.model
+
+jwt:
+  secret: 1234
