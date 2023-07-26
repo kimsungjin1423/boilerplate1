@@ -1,0 +1,1 @@
+web: chmod 775 ./run && ./run.sh
